@@ -1,9 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const outputDirectory = 'dist';
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './app/index.js',
+  entry: { app: './app/index.js' },
   output: {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js'
@@ -41,6 +42,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };

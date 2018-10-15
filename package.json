@@ -39,6 +39,8 @@
     "@material-ui/core": "^1.5.1",
     "@material-ui/icons": "^3.0.1",
     "commander": "^2.17.1",
+    "matter-js": "^0.14.2",
+    "pixi.js": "^4.8.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
